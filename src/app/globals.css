@@ -21,3 +21,23 @@
 body {
   font-family: "STIXIntegralsUp", sans-serif;
 }
+
+.arrow-button {
+	background-color: rgba(255, 255, 255, 0.3);
+	position: absolute;
+	margin-top: auto;
+	bottom: calc(50%);
+	height: 32px;
+	width: 32px;
+	border-radius: 50%;
+	color: white;
+	z-index: 1000;
+}
+
+.right-arrow-button {
+	right: 36px;
+}
+
+.left-arrow-button {
+	left: 36px;
+}
