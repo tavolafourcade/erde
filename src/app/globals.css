@@ -32,10 +32,18 @@ body {
 	border-radius: 50%;
 	color: white;
 	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
+/* 
+.arrow-button-lg {
+	
+} */
 
 .right-arrow-button {
 	right: 36px;
+	transform: rotate(180deg);
 }
 
 .left-arrow-button {

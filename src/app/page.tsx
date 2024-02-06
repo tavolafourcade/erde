@@ -15,21 +15,21 @@ const Home = () => {
   }
 
   return (
-    <div className='h-screen flex flex-col'>
+    <div className='h-screen flex flex-col overflow-hidden'>
       <Navbar activeButton={activeButton} toggleLanguage={toggleLanguage} />
-      {/* <div className="flex-1 flex flex-col items-center justify-end relative"> */}
 
-      <div className='flex-1 flex-col justify-end items-center overflow-hidden relative '>
+      <div>
         <CarouselComponent />
 
-        <div className='absolute left-1/2 transform -translate-x-1/2 text-center'>
-          <span className='text-primary text-25 font-normal'>{launchDate}</span>
-          <span className='text-primary text-25 font-normal'>{title}</span>
-          <span className='text-primary text-25 font-normal'>{subTitle}</span>
-        </div>
-
-        <div className='absolute bottom-4 transform -translate-x-1/2 text-center'>
-          <span>{contact} <strong>{email}</strong></span>
+        <div className='absolute ml-6 mr-12 top-32 lg:top-60 lg:w-[45rem] lg:ml-[10rem] lg:h-[38rem] flex flex-col justify-between'>
+          <div className='  text-white flex flex-col'>
+            <span className='text-sm lg:text-2xl'>{launchDate}</span>
+            <span className='text-3xl lg:text-[3.125rem] font-bold lg:leading-[3.5rem] pt-4 pb-5'>{title}</span>
+            <span className='text-base lg:text-2xl font-normal'>{subTitle}</span>
+          </div>
+          <div className='hidden text-white lg:text-xl'>
+            <span>{contact} <strong>{email}</strong></span>
+          </div>
         </div>
       </div>
     </div>

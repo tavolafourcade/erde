@@ -6,7 +6,7 @@ interface Props {
   activeButton: Language;
 }
 const Navbar = ({ toggleLanguage, activeButton }: Props) => (
-  <nav className='bg-primary' >
+  <nav className='bg-primary fixed top-0 left-0 right-0 z-10' >
     <div className='mx-auto md:px-16 flex justify-between md:py-5 py-4 px-4'>
       <Logo />
       <div>

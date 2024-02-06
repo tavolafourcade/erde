@@ -18,9 +18,6 @@ module.exports = {
         stix: ['STIXIntegralsUp', 'serif'],
         gantari: ['Gantari', 'sans-serif']
       },
-      fontSize: {
-        '25': '25px',
-      },
     },
   },
   plugins: [],
