@@ -27,7 +27,7 @@ const Home = () => {
             <span className='text-3xl lg:text-[3.125rem] font-bold lg:leading-[3.5rem] pt-4 pb-5'>{title}</span>
             <span className='text-base lg:text-2xl font-normal'>{subTitle}</span>
           </div>
-          <div className='hidden text-white lg:text-xl'>
+          <div className='text-white lg:text-xl'>
             <span>{contact} <strong>{email}</strong></span>
           </div>
         </div>
