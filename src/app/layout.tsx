@@ -17,7 +17,7 @@ const onest = Onest({
 export default function RootLayout(props: Readonly<{children: React.ReactNode}>) {
   return (
     <html className={`${gantari.variable} ${onest.variable}`} lang='en'>
-      <body>{props.children}</body>
+      <body className='overflow-hidden'>{props.children}</body>
     </html>
   )
 }
