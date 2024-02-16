@@ -21,7 +21,7 @@ const Home = () => {
       <div>
         <CarouselComponent />
 
-        <div className='absolute ml-6 mr-12 top-36 lg:top-60 lg:w-[45rem] lg:ml-[10rem] lg:h-[38rem] flex flex-col justify-between'>
+        <div className='absolute ml-6 mr-12 top-36 lg:top-56 lg:w-[45rem] lg:ml-[10rem] lg:h-[36rem] flex flex-col justify-between'>
           <div className='  text-white flex flex-col'>
             <span className='text-sm lg:text-2xl font-onest font-thin'>{launchDate}</span>
             <span className='text-3xl lg:text-[3.125rem] font-bold lg:leading-[3.5rem] pt-6 pb-5 lg:pt-4 font-onest'>{title}</span>
