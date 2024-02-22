@@ -2,32 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@import url('/styles/theme.css');
+
+.arrow-button {
+	background-color: rgba(255, 255, 255, 0.3);
+	position: absolute;
+	margin-top: auto;
+	bottom: calc(50%);
+	height: 32px;
+	width: 32px;
+	border-radius: 50%;
+	color: white;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.right-arrow-button {
+	right: 36px;
+	transform: rotate(180deg);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.left-arrow-button {
+	left: 36px;
 }
